@@ -69,11 +69,11 @@ class _WindowBodyState extends State<WindowBody> {
 
   // API response holder
   Map<String, dynamic> apiResponse = {
-    "calm": 40,
-    "anger": 50,
-    "joy": 10,
+    "calm": 30,
+    "anger": 30,
+    "joy": 30,
     "sorrow": 30,
-    "energy": 20,
+    "energy": 30,
   };
 
   Future<Map<String, dynamic>> _getAPI(String filePath) async {
