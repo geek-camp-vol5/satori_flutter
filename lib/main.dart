@@ -199,17 +199,21 @@ class _WindowBodyState extends State<WindowBody> {
                   fontWeight: FontWeight.w600,
                   fontFamily: "RondeB",
                 )),
-            TextButton(
-                onPressed: _startTimer,
-                style: TextButton.styleFrom(
-                  foregroundColor: Colors.green,
-                  backgroundColor: Colors.grey,
-                  shadowColor: Colors.teal,
-                  elevation: 5,
-                ),
-                child: Text((_flag ? "停止" : "開始"),
-                    style:
-                        const TextStyle(color: Colors.black, fontSize: 40.0))),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  vertical: 10.0), // 上下に10.0のパディングを追加
+              child: TextButton(
+                  onPressed: _startTimer,
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.green,
+                    backgroundColor: Colors.grey,
+                    shadowColor: Colors.teal,
+                    elevation: 5,
+                  ),
+                  child: Text((_flag ? "停止" : "開始"),
+                      style: const TextStyle(
+                          color: Colors.black, fontSize: 40.0))),
+            ),
             Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: AspectRatio(
