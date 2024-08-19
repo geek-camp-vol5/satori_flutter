@@ -1,16 +1,17 @@
 # satori
 
-A new Flutter project.
+あなたの感情を可視化します！
 
-## Getting Started
+## Feature
+web会議や友達との通話で，相手との距離感を掴みかねることはありませんか？
+satoriは，そのような問題に対するソリューションの1つとして製作しました！
+マイクに入力される音声を読み取り，感情パラメータをリアルタイムで表示します！
 
-This project is a starting point for a Flutter application.
+## Release
+- Windows : ./satori.exe から起動できます．
+- Android : flutter Record のバグ修正中，近日修正，デプロイ予定
+- IOS     : エミュレータ準備次第実装予定
 
-A few resources to get you started if this is your first Flutter project:
+## Note
+- API制限の問題で正常に動作しない場合があります．ご了承ください．
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
