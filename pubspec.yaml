@@ -46,6 +46,13 @@ dependencies:
   record: ^5.1.2
   path: ^1.8.3
   dio: ^5.2.1+1
+  flutter_launcher_icons: ^0.9.3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  remove_alpha_ios: true
 
 dev_dependencies:
   flutter_test:

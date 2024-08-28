@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const Satori(title: 'Satori'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
