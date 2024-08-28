@@ -135,12 +135,31 @@ class _SatoriState extends State<Satori> {
   Future<void> _startRecording() async {
     logger.i("_startRecording : recording...");
     if (await _record.hasPermission()) {
+      // ExternalPath.getExternalStoragePublicDirectory(
+      //     ExternalPath.DIRECTORY_DOWNLOADS);
       final directory = await getApplicationDocumentsDirectory();
       String _tmppath = directory.path;
       _pathToWrite = '$_tmppath/kari.wav';
+      // _pathToWrite = p.join(directory.path, 'kari.wav');
       logger.i("_startRecording : get directory : $_pathToWrite");
+      // await _record.start(
+      //   path: _pathToWrite,
+      //   // encoder: AudioEncoder.aacLc,
+      //   encoder: AudioEncoder.pcm16bit,
+      //   bitRate: 1411000, //あとで1411000も試す
+      //   samplingRate: 11025,
+      // );
 
       await _record.start(const RecordConfig(), path: _pathToWrite!);
+      // await _record.start(
+      //   path: _pathToWrite,
+      //   encoder: AudioEncoder.aacLc,
+      //   bitRate: 256000,
+      //   samplingRate: 11025,
+      // );
+      // setState(() {
+      //   _isRecording = true;
+      // });
     } else {
       logger.e("Recording permission denied");
     }
